@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Заполните анкету</h1>
+
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <fieldset><legend>Личные данные</legend>
+            <label ><input tabindex="1" pattern="[А-Яа-яЁё]" maxlength="25" required placeholder="Фамилия" autofocus type="text"></label><br>
+            <label ><input tabindex="2" pattern="[А-Яа-яЁё]" maxlength="20" required placeholder="Имя" type="text"></label><br>
+            <label ><input tabindex="3" pattern="[А-Яа-яЁё]" maxlength="24" required placeholder="Отчество" type="text"></label>
+
+            <fieldset><legend>Паспортные данные</legend>
+                <label>
+                    <input tabindex="4" pattern="[A-Z]{2}" size="2" maxlength="2" minlength="2" required type="text">
+                    <input tabindex="5" pattern="[0-9]{7}" size="7" maxlength="7" minlength="7" required type="text"></label>
+            </fieldset>
+
+            <fieldset><legend>Дата рождения</legend>
+               <label><input tabindex="6" pattern="[0-9]{4}" minlength="4" maxlength="4" placeholder="1993" type="text"></label><br>
+               <label><select tabindex="7" name="month" >
+                   <option value="01">Январь</option>
+                   <option value="02">Февраль</option>
+                   <option value="03">Март</option>
+                   <option value="04">Апрель</option>
+                   <option value="05">Май</option>
+                   <option value="06">Июнь</option>
+                   <option value="07">Июль</option>
+                   <option value="08">Август</option>
+                   <option value="09">Сентябрь</option>
+                   <option value="10">Октябрь</option>
+                   <option value="11">Ноябрь</option>
+                   <option value="12">Декабрь</option>
+               </select></label><br>
+               <label><input tabindex="8" min="1" max="31" type="text"></label><br>
+            </fieldset>
+
+            <select tabindex="9" name="nac" required >
+                <option value="by">РБ</option>
+                <option value="ru">РФ</option>
+                <option value="pl">ПЛ</option>
+            </select><br>
+            <label>Адрес:<br>
+            <textarea tabindex="10" name="adr"></textarea></label>
+
+        </fieldset>
+
+        <fieldset><legend>Интересы</legend>
+            <fieldset><legend title="Хобби">Хобби</legend>
+                <label><input tabindex="11" type="checkbox" name="fis" >Рыбка</label><br>
+                <label><input tabindex="12" type="checkbox" name="ast" >Астрономия</label><br>
+                <label><input tabindex="13" type="checkbox" name="daiv" >Дайвинг</label><br>
+                <label><input tabindex="14" type="checkbox" name="mar" >Марки</label>
+            </fieldset>
+
+            <fieldset><legend>Домашние животные</legend>
+            <label title="select multiple">
+                <select tabindex="15" name="anim" multiple>
+                    <optgroup label="Попугаи">
+                        <option value="">Волнистый</option>
+                        <option value="">Ара</option>
+                        <option value="">Неразлучник</option>
+                    </optgroup>
+                    <optgroup label="Рыбы" >
+                        <option value="">Караси</option>
+                        <option value="">Окуни</option>
+                        <option value="">Асетр</option>
+                    </optgroup>
+                    <optgroup label="Птицы" >
+                        <option value="">Стая ворон</option>
+                        <option value="">Аисн</option>
+                        <option value="">Гусь</option>
+                    </optgroup>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset><legend>Данные для входа и восстановления пороля</legend>
+            <label><input tabindex="16" required pattern="[A-Za-z]{,5}" size="20" type="text"></label><br>
+            <label><input tabindex="17" required pattern="[A-Za-z]{,10}" size="20" autocomplete="off" type="password"></label>
+        </fieldset>
+
+        <fieldset><legend>Координаты</legend>
+            <label><input tabindex="18" placeholder="Введите адрес почты" type="email" name="email"></label><br>
+            <label><input tabindex="19" placeholder="Введите адрес сайта" type="url" name="url"></label>
+        </fieldset>
+
+        <fieldset><legend>Цифры</legend>
+            <label><input tabindex="20" min="-2.5" max="2.5" step="0.1" type="number" name="number"></label><br>
+            <label><input tabindex="21" min="1" max="10" type="range" name="range"></label>
+        </fieldset>
+
+        <fieldset><legend>Кнопки управления</legend>
+            <button tabindex="22" type="submit">Отправить</button>
+            <button tabindex="23" type="reset">Сбросить</button><br>
+            <button tabindex="24"><img src="email.jpg"></button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
