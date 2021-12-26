@@ -1,0 +1,25 @@
+body {
+    width: 600px;
+    margin: 0 auto;
+}
+h3 {
+    text-align: right;
+}
+div {
+    text-align: right;
+}
+.adress {
+    font-style: italic;
+}
+h2 {
+    text-align: left;
+    text-decoration: underline;
+    font-family: cursive;
+    font-style: italic;
+    text-indent: 20px;
+}
+.text {
+    font-family: cursive;
+    font-style: italic;
+    text-indent: 20px;
+}
