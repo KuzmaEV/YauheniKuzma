@@ -14,12 +14,12 @@ div {
 h2 {
     text-align: left;
     text-decoration: underline;
-    font-family: cursive;
+    font-family: 'Bad Script', cursive;
     font-style: italic;
     text-indent: 20px;
 }
 .text {
-    font-family: cursive;
+    font-family: 'Bad Script', cursive;
     font-style: italic;
     text-indent: 20px;
 }
