@@ -1,0 +1,44 @@
+.blocks {
+    background-image: url('img/cards7e0a18f0.png');
+    width: 145px; height: 199px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.abc {
+margin: 0px 0px 0px -130px;
+}
+.h {
+    width: 350px;
+    font-weight: 700;
+    list-style-type: upper-roman;
+}
+.li {
+    font-weight: 400;
+    list-style-type: lower-roman;
+}
+.code{
+    font-family: monospace;
+    white-space: pre;
+    background-color: black;
+    min-height: 4em;
+    width: 400px;
+    color: #080;
+}
+.navigation {
+    width: 15em;
+    background-color: rgb(93, 120, 133);
+    float: left;
+}
+.art {
+    
+    background-color: rgb(90, 102, 117);
+    margin-bottom: 2em;
+    display: table;
+}
+.img {
+    float: right;
+}
+.cl {
+    clear: both;
+    background-color: blueviolet;
+}
