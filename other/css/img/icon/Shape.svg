@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14" width="21" height="14">
+	<title>Story 2</title>
+	<style>
+		tspan { white-space:pre }
+		.s0 { opacity: .8;fill: #ffffff } 
+	</style>
+	<g id="Story 2">
+		<g id="Button">
+			<path id="Shape 2" class="s0" d="m0 6h16l-2.59-6l7.59 7l-7.59 7l2.59-6h-16v-2z" />
+		</g>
+	</g>
+</svg>
