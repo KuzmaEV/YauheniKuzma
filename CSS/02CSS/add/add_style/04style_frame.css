@@ -1,0 +1,28 @@
+.frame_l {
+    width: 80%;
+    background: url(../img/l.png) repeat-y left;
+}
+.frame_t {
+    background: url(../img/t.png) repeat-x top;
+}
+.frame_r {
+    background: url(../img/r.png) repeat-y right;
+}
+.frame_b {
+    background: url(../img/b.png) repeat-x bottom;
+}
+.frame_t_l {
+    background: url(../img/l-t.png) no-repeat top left;
+}
+.frame_t_r {
+    background: url(../img/r-t.png) no-repeat top right;
+}
+.frame_b_r {
+    background: url(../img/r-b.png) no-repeat bottom right;
+}
+.frame_b_l {
+    background: url(../img/l-b.png) no-repeat bottom left;
+}
+.frame_text {
+    padding: 3em;
+}

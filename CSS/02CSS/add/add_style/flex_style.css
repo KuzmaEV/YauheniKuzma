@@ -1,0 +1,37 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    background: #239;
+
+}
+.top__navigation {
+    width: 15em;
+    background: #555;
+    align-self: flex-start;
+}
+.top__block {
+    display: flex;
+    flex-direction: column;
+    
+}
+.block_art {
+    align-self: flex-start;
+    margin: 0 0 2em 0;
+    background: #777;
+}
+.img {
+    display: flex;
+    flex-direction: column;
+    
+}
+.img_scr {
+    align-self: flex-end;
+}
+
+.cl {background: #159;
+    flex-grow: 1;
+}
