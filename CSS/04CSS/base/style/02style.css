@@ -17,7 +17,7 @@ td:first-child{
 tr:nth-child(odd):not(:last-child) {
     background-color: #999;
 }
-tr:hover {
+tr:hover td {
     background-color: yellow;
 }
 tr:last-child th {

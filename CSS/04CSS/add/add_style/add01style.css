@@ -1,0 +1,43 @@
+body {
+    padding: 30px;
+    max-width: 650px;
+}
+div p {
+    border: solid 1px #777 ;
+    border-radius: 0 15px;
+    margin: 0;
+    padding: 10px;
+}
+a[href^="https://"]::before {
+    content: url('../../base/img/link.png');
+    padding-right: 2px;
+    }
+.block a[href$='.docx']::after {
+    content: url('../../base/img/word.jpg')
+}
+.block a[href$='.pdf']::after {
+    content: url('../../base/img/Adobe.png');
+}
+.block a[href$='.zip']::after {
+    content: url('../../base/img/arch.gif');
+}
+.list {
+    list-style-type: none;
+}
+.list li::before {
+    content: url('../../base/img/li.jpg');
+}
+
+    
+.list a[href$='.docx']:hover::after{
+    content: url('../../base/img/word.jpg');
+}
+.list a[href$='.pdf']:hover::after{
+    content: url('../../base/img/Adobe.png');
+}
+.list a[href$='.zip']:hover::after{
+    content: url('../../base/img/arch.gif');
+}
+
+    
+
