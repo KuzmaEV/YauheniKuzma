@@ -1,0 +1,44 @@
+body {
+    padding: 30px;
+    max-width: 650px;
+}
+div p {
+    border: solid 1px #777 ;
+    border-radius: 0 15px;
+    margin: 0;
+    padding: 10px;
+}
+
+a[href^="https://"]::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../img/link.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    padding-right: 2px;
+    }
+.files_doc::after{
+    content: url(../img/word.jpg);
+    }
+.files_pdf::after{
+    content: url(../img/Adobe.png);
+    }
+.files_zip::after{
+    content: url(../img/arch.gif);
+    }
+.list {
+    list-style-image: url(../img/li.jpg);
+}
+.list li:hover:nth-child(1)::after{
+    content: url(../img/word.jpg);
+}
+.list li:hover:nth-child(2)::after{
+    content: url(../img/Adobe.png);
+}
+.list li:hover:nth-child(3)::after{
+    content: url(../img/arch.gif);
+}
+
+    
+
