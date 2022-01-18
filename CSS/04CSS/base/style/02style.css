@@ -1,7 +1,7 @@
 table {
     border: solid #999 1px;
 }
-th {
+tr:first-child th {
     background: #777;
 }
 td {
@@ -14,7 +14,7 @@ td:not(:last-child){
 td:first-child{
     font-weight: bold;
 }
-tr:nth-child(odd) {
+tr:nth-child(odd):not(:last-child) {
     background-color: #999;
 }
 tr:hover {
@@ -23,5 +23,4 @@ tr:hover {
 tr:last-child th {
     font-weight: normal;
     text-transform: uppercase;
-    background-color: white;
 }
