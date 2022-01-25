@@ -1,0 +1,34 @@
+/*table {
+    border: solid #999 1px;
+}*/
+tr:first-child th {
+    background: #777;
+}
+td {
+    border-bottom: dotted #777 2px;
+}
+td:not(:last-child){
+    border-right: dotted #777 2px;
+}
+
+td:first-child{
+    font-weight: bold;
+}
+tr:nth-child(odd):not(:last-child) {
+    background-color: #999;
+}
+tr:hover td {
+    background-color: yellow;
+}
+tr:last-child th {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+button{
+    color: white;
+    background-color: #46e;
+    border: solid rgba(68, 147, 238, 0.5) 1px;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+}
