@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Проверка пороля</h1>
+    <div>
+        <form action="http://fe.it-academy.by/TestForm.php"><fieldset>
+        <label><input id="pass" type="text" name="pass" required> * Пороль</label><br>
+        <label><input id="passtr" type="text" name="passtr" required> * Повторите пороль</label><br>
+        <label> <button type="submit">Отправить</button></label>
+    </fieldset></form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function($){
+            $("input").focus(function () {
+            $(this).css('border', '3px solid blue')    
+            }).blur(function () {
+            $(this).css('border', '1px solid rgb(118, 118, 118)')    
+            })
+            $("input").on('input', function(){
+                $("input").css('background-color', 'green')
+            })
+            $("#passtr").on('input', function(){
+                var pas1 = $("#pass").val();
+                var pas2 = $("#passtr").val();
+                    if (pas1==pas2) {
+                $("input").css('background-color', 'green');
+                    }
+                    else {
+                $("input").css('background-color', 'red');
+       }
+                    if (pas2=='') {
+                $("input").css('background-color', 'green');
+                    }
+            })
+        })
+    </script>
+</body>
+</html>
